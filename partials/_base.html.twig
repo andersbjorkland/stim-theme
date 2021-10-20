@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ htmllang() }}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {%- if record|default and record.title -%}
+            {{- record.title ~ ' | ' -}}
+        {%- endif -%}
+            {{- config.get('general/sitename') -}}
+        {%- if record|default == null and config.has('general/payoff') -%}
+            {{- ' | ' ~ config.get('general/payoff') -}}
+        {%- endif -%}
+    </title>
+    {% include 'helpers/_og_tags.html.twig' %}
+</head>
+<body>
+    <h1>It is working?</h1>
+    {% block main %}
+
+    {% endblock %}
+</body>
+</html>

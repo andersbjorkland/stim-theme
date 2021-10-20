@@ -1,0 +1,9 @@
+{
+  "name": "stim",
+  "version": "1.0.0",
+  "description": "Bolt theme with the power of Stimulus and Tailwind",
+  "main": "index.js",
+  "author": "Anders Björkland <contact@andersbjorkland.online>",
+  "license": "MIT",
+  "private": false
+}
